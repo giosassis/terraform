@@ -1,0 +1,5 @@
+terraform-aws.pub 
+terraform.tfstate.backup
+notes.txt 
+.terraform/
+.idea/
