@@ -44,7 +44,7 @@ resource "aws_instance" "dev5" {
 
 //Instance EAST-2
 resource "aws_instance" "dev6" {
-  provider = "aws.us-east-2"
+  provider = aws.us-east-2
   ami           = var.amis["us-east-2"]
   instance_type = "t2.micro"
   key_name      = var.key_name
@@ -58,7 +58,7 @@ resource "aws_instance" "dev6" {
 }
 
 resource "aws_instance" "dev7" {
-  provider = "aws.us-east-2"
+  provider = aws.us-east-2
   ami           = var.amis["us-east-2"]
   instance_type = "t2.micro"
   key_name      = var.key_name
@@ -82,7 +82,7 @@ resource "aws_s3_bucket" "dev4" {
 
 //Database 
 resource "aws_dynamodb_table" "dynamodb-homologacao" {
-  provider    = "aws.us-east-2"
+  provider    = aws.us-east-2
   name           = "GameScores"
   billing_mode   = "PAY_PER_REQUEST"
   hash_key       = "UserId"
