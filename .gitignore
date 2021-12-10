@@ -3,3 +3,4 @@ terraform.tfstate.backup
 notes.txt 
 .terraform/
 .idea/
+.history/
